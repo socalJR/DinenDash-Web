@@ -28,132 +28,7 @@ class RestaurantMenu extends StatelessWidget {
             children: <Widget>[
               NavigationBar(),
 
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: [
 
-                  Text('\t\tAppetizers',
-                  style: TextStyle(
-                    color: Colors.white,
-                    decoration: TextDecoration.underline,
-                    fontSize: 30,
-                  ),
-                  ),
-
-
-                  Padding(
-                    padding: EdgeInsets.fromLTRB(0,0,700,0),
-                    child: ButtonBar(
-                      children: <Widget>[
-                      RaisedButton(
-                        shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.all(Radius.circular(100))
-                        ),
-                        onPressed: () {},
-                        child: Text(
-                            'Add Item'
-                        ),
-                        textColor: Colors.white,
-                        color: const Color(0xfffd1040),
-                        padding: EdgeInsets.fromLTRB(80, 0, 80, 0),
-                      ),
-    ]
-                    ),
-                  ),
-                ],
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: <Widget>[
-
-                  RaisedButton(
-                    padding: EdgeInsets.all(50),
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.all(Radius.circular(10))
-                    ),
-                    onPressed: (){Navigator.push(context,MaterialPageRoute(builder: (context) => RestaurantEditMenu()));},
-                    color: const Color(0xfffd1040),
-                    child: Text('Buffalo \nWings'),
-                    textColor: Colors.white,
-                  ),
-                  RaisedButton(
-                    padding: EdgeInsets.all(50),
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.all(Radius.circular(10))
-                    ),
-                    onPressed: (){},
-                    color: const Color(0xfffd1040),
-                    child: Text('Chicken \nTaquitos'),
-                    textColor: Colors.white,
-                  ),
-                  RaisedButton(
-                    padding: EdgeInsets.all(50),
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.all(Radius.circular(10))
-                    ),
-                    onPressed: (){},
-                    color: const Color(0xfffd1040),
-                    child: Text('Chili Cheese \nFries'),
-                    textColor: Colors.white,
-                  ),
-                  RaisedButton(
-                    padding: EdgeInsets.all(50),
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.all(Radius.circular(10))
-                    ),
-                    onPressed: (){},
-                    color: const Color(0xfffd1040),
-                    child: Text('Clam Chowder\n Fries'),
-                    textColor: Colors.white,
-                  ),
-                ],
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: <Widget>[
-
-                  RaisedButton(
-                    padding: EdgeInsets.all(50),
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.all(Radius.circular(10))
-                    ),
-                    onPressed: (){},
-                    color: const Color(0xfffd1040),
-                    child: Text('Mozzerela \nSticks'),
-                    textColor: Colors.white,
-                  ),
-                  RaisedButton(
-                    padding: EdgeInsets.all(50),
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.all(Radius.circular(10))
-                    ),
-                    onPressed: (){},
-                    color: const Color(0xfffd1040),
-                    child: Text('Nachos'),
-                    textColor: Colors.white,
-                  ),
-                  RaisedButton(
-                    padding: EdgeInsets.all(50),
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.all(Radius.circular(10))
-                    ),
-                    onPressed: (){},
-                    color: const Color(0xfffd1040),
-                    child: Text('Spinach \nDip'),
-                      textColor: Colors.white,
-                  ),
-                  RaisedButton(
-                    padding: EdgeInsets.all(50),
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.all(Radius.circular(10))
-                    ),
-                    onPressed: (){},
-                    color: const Color(0xfffd1040),
-                    child: Icon(Icons.plus_one,
-                      color: Colors.white,),
-                  ),
-                ],
-              ),
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -258,6 +133,131 @@ class RestaurantMenu extends StatelessWidget {
                         ),
                       ),
                     ),
+                  ),
+                ],
+              ),Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+
+                  Text('\t\tAppetizers',
+                    style: TextStyle(
+                      color: Colors.white,
+                      decoration: TextDecoration.underline,
+                      fontSize: 30,
+                    ),
+                  ),
+
+
+                  Padding(
+                    padding: EdgeInsets.fromLTRB(0,0,700,0),
+                    child: ButtonBar(
+                        children: <Widget>[
+                          RaisedButton(
+                            shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.all(Radius.circular(100))
+                            ),
+                            onPressed: () {},
+                            child: Text(
+                                'Add Item'
+                            ),
+                            textColor: Colors.white,
+                            color: const Color(0xfffd1040),
+                            padding: EdgeInsets.fromLTRB(80, 0, 80, 0),
+                          ),
+                        ]
+                    ),
+                  ),
+                ],
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: <Widget>[
+
+                  RaisedButton(
+                    padding: EdgeInsets.all(50),
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.all(Radius.circular(10))
+                    ),
+                    onPressed: (){Navigator.push(context,MaterialPageRoute(builder: (context) => RestaurantEditMenu()));},
+                    color: const Color(0xfffd1040),
+                    child: Text('Buffalo \nWings'),
+                    textColor: Colors.white,
+                  ),
+                  RaisedButton(
+                    padding: EdgeInsets.all(50),
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.all(Radius.circular(10))
+                    ),
+                    onPressed: (){},
+                    color: const Color(0xfffd1040),
+                    child: Text('Chicken \nTaquitos'),
+                    textColor: Colors.white,
+                  ),
+                  RaisedButton(
+                    padding: EdgeInsets.all(50),
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.all(Radius.circular(10))
+                    ),
+                    onPressed: (){},
+                    color: const Color(0xfffd1040),
+                    child: Text('Chili Cheese \nFries'),
+                    textColor: Colors.white,
+                  ),
+                  RaisedButton(
+                    padding: EdgeInsets.all(50),
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.all(Radius.circular(10))
+                    ),
+                    onPressed: (){},
+                    color: const Color(0xfffd1040),
+                    child: Text('Clam Chowder\n Fries'),
+                    textColor: Colors.white,
+                  ),
+                ],
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: <Widget>[
+
+                  RaisedButton(
+                    padding: EdgeInsets.all(50),
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.all(Radius.circular(10))
+                    ),
+                    onPressed: (){},
+                    color: const Color(0xfffd1040),
+                    child: Text('Mozzerela \nSticks'),
+                    textColor: Colors.white,
+                  ),
+                  RaisedButton(
+                    padding: EdgeInsets.all(50),
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.all(Radius.circular(10))
+                    ),
+                    onPressed: (){},
+                    color: const Color(0xfffd1040),
+                    child: Text('Nachos'),
+                    textColor: Colors.white,
+                  ),
+                  RaisedButton(
+                    padding: EdgeInsets.all(50),
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.all(Radius.circular(10))
+                    ),
+                    onPressed: (){},
+                    color: const Color(0xfffd1040),
+                    child: Text('Spinach \nDip'),
+                    textColor: Colors.white,
+                  ),
+                  RaisedButton(
+                    padding: EdgeInsets.all(50),
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.all(Radius.circular(10))
+                    ),
+                    onPressed: (){},
+                    color: const Color(0xfffd1040),
+                    child: Icon(Icons.plus_one,
+                      color: Colors.white,),
                   ),
                 ],
               ),
