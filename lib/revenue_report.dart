@@ -1,15 +1,20 @@
-import 'package:dinendash_web/FoodColumns/restuarant_entrees.dart';
+import 'package:dinendash_web/restaurant_menu.dart';
+
 import 'package:dinendash_web/widgets/NavigationBar/navigation_bar.dart';
+import 'package:dinendash_web/widgets/employee/addEmployeeButton.dart';
+import 'package:dinendash_web/widgets/employee/revenueReportTable.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
 class RevenueReport extends StatelessWidget {
+  const RevenueReport({Key key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: SingleChildScrollView(
-        padding: EdgeInsets.only(bottom: MediaQuery.of(context).viewInsets.bottom),
+        padding:
+        EdgeInsets.only(bottom: MediaQuery.of(context).viewInsets.bottom),
         child: Container(
           height: MediaQuery.of(context).size.height,
           decoration: BoxDecoration(
@@ -20,23 +25,15 @@ class RevenueReport extends StatelessWidget {
           ),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            //mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               NavigationBar(),
-
-              Container(
-                alignment: Alignment.center,
-                  child: SizedBox(
-                    width: 1000,
-                    height: 500,
-                    child: Image.asset('assets/revenuereport.png'),
-                  ),
-              ),
-
-         ]
+              RevenueReportTable(),
+              AddEmployeeButton(),
+            ],
+          ),
+        ),
       ),
-    ),
-    ),
     );
   }
 }
